@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Pharmacovigilance Career Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        background: white;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    header h1 {
+        color: #667eea;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        color: #666;
+        font-size: 1.1em;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tab-btn {
+        padding: 12px 24px;
+        background: white;
+        border: 2px solid #667eea;
+        color: #667eea;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+    .tab-btn:hover {
+        background: #667eea;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .tab-btn.active {
+        background: #667eea;
+        color: white;
+    }
+
+    .tab-content {
+        display: none;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        animation: fadeIn 0.3s;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+        margin-bottom: 40px;
+    }
+
+    .section h2 {
+        color: #667eea;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+    }
+
+    .section h3 {
+        color: #764ba2;
+        font-size: 1.3em;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .question-box {
+        background: #f8f9ff;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .question-box:hover {
+        background: #eff1ff;
+        transform: translateX(5px);
+    }
+
+    .question-box.active {
+        background: #e8ecff;
+    }
+
+    .question-box strong {
+        color: #667eea;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .answer-box {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 10px 0 15px 0;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .answer-box.show {
+        display: block;
+        animation: slideDown 0.3s;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+        to {
+            opacity: 1;
+            max-height: 1000px;
+        }
+    }
+
+    .course-card {
+        background: #f8f9ff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+    }
+
+    .course-card h4 {
+        color: #667eea;
+        margin-bottom: 8px;
+        font-size: 1.1em;
+    }
+
+    .course-card p {
+        color: #666;
+        margin: 8px 0;
+    }
+
+    .course-card .duration {
+        color: #764ba2;
+        font-weight: 600;
+    }
+
+    .course-card .platform {
+        background: #667eea;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-size: 0.85em;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .roadmap {
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .roadmap-item {
+        background: #f8f9ff;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .roadmap-item::before {
+        content: attr(data-step);
+        position: absolute;
+        left: -35px;
+        top: 20px;
+        background: #667eea;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    .roadmap-item h4 {
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+
+    .roadmap-item ul {
+        margin-left: 20px;
+    }
+
+    .roadmap-item li {
+        margin: 8px 0;
+        color: #555;
+    }
+
+    .key-topics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .topic-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .topic-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .topic-card strong {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .tips-box {
+        background: #d4edda;
+        border-left: 4px solid #28a745;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .tips-box strong {
+        color: #155724;
+    }
+
+    .tips-box p {
+        color: #155724;
+        margin: 8px 0;
+    }
+
+    .cert-box {
+        background: #cce5ff;
+        border-left: 4px solid #0066cc;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .cert-box strong {
+        color: #004499;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .cert-box p {
+        color: #004499;
+        margin: 8px 0;
+    }
+
+    .checklist {
+        background: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .checklist label {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: background 0.3s;
+    }
+
+    .checklist label:hover {
+        background: #e0e0e0;
+    }
+
+    .checklist input[type="checkbox"] {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        .tabs {
+            gap: 5px;
+        }
+
+        .tab-btn {
+            padding: 10px 15px;
+            font-size: 0.9em;
+        }
+
+        .roadmap-item::before {
+            left: -42px;
+            top: 15px;
+        }
+
+        .key-topics {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔬 Complete Pharmacovigilance Career Guide</h1>
+            <p>From B.Pharm Graduate to Pharmacovigilance Professional</p>
+        </header>
+
+```
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('interview')">Interview Questions</button>
+        <button class="tab-btn" onclick="switchTab('courses')">Free Courses</button>
+        <button class="tab-btn" onclick="switchTab('roadmap')">Entry Roadmap</button>
+        <button class="tab-btn" onclick="switchTab('topics')">Key Topics</button>
+        <button class="tab-btn" onclick="switchTab('resources')">Additional Resources</button>
+    </div>
+
+    <!-- INTERVIEW QUESTIONS TAB -->
+    <div id="interview" class="tab-content active">
+        <div class="section">
+            <h2>📋 Pharmacovigilance Interview Questions</h2>
+
+            <h3>Basic Concepts & Definitions</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q1: What is pharmacovigilance? Define it and explain its importance.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> Pharmacovigilance is the science and activities relating to the detection, assessment, understanding, and prevention of adverse effects of medicinal products. It involves:
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Detection:</strong> Identifying adverse drug reactions (ADRs) through post-marketing surveillance</li>
+                        <li><strong>Assessment:</strong> Evaluating causality, severity, and risk-benefit profile</li>
+                        <li><strong>Prevention:</strong> Taking action to minimize patient harm</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Importance:</strong> Ensures drug safety post-launch, protects public health, maintains drug efficacy-safety balance, and supports regulatory compliance.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q2: What is the difference between pharmacovigilance and drug safety monitoring?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Pharmacovigilance:</strong> Broader term covering detection, assessment, understanding, and prevention of ADRs. It's a proactive science.</li>
+                        <li><strong>Drug Safety Monitoring:</strong> Narrower subset focused on continuous monitoring of drug safety. It's more reactive.</li>
+                    </ul>
+                    <p style="margin-top: 10px;">Pharmacovigilance encompasses drug safety monitoring as well as signal detection, risk management, and public communication.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q3: What is an Adverse Drug Reaction (ADR)? Classify them.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>ADR Definition:</strong> Any response to a drug that is noxious and unintended, occurring at doses normally used for diagnosis, therapy, or prophylaxis.
+                    <p style="margin-top: 10px;"><strong>WHO Classification (Type A–E):</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Type A (Augmented):</strong> Dose-dependent, predictable (e.g., anticholinergic effects)</li>
+                        <li><strong>Type B (Bizarre):</strong> Dose-independent, unpredictable (e.g., drug allergies)</li>
+                        <li><strong>Type C (Chronic):</strong> Occur after prolonged exposure (e.g., organ toxicity)</li>
+                        <li><strong>Type D (Delayed):</strong> Appear after a delay (e.g., teratogenicity)</li>
+                        <li><strong>Type E (End-of-dose):</strong> Related to drug withdrawal (e.g., rebound hypertension)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Causality Assessment</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q4: What is causality assessment? Name and explain the major scales used.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> Causality assessment determines the probability that an observed ADR was caused by the suspect drug.
+                    <p style="margin-top: 10px;"><strong>Major Scales:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Naranjo Scale:</strong> 10-question algorithm; most widely used. Score: Definite (≥9), Probable (5–8), Possible (1–4), Unlikely (≤0).</li>
+                        <li><strong>WHO-UMC Scale:</strong> 6 categories: Certain, Probable/Likely, Possible, Unlikely, Unrelated, Unassessable.</li>
+                        <li><strong>Karch & Lasagna Scale:</strong> 7-point scale considering temporal relationship, dose-response, alternative causes.</li>
+                        <li><strong>Jones Scale:</strong> Used for liver injury; 14-point scoring system.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q5: Explain temporal relationship and dechallenge/rechallenge concepts.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>Temporal Relationship:</strong> The interval between drug administration and ADR occurrence. Shorter intervals strengthen causality (within expected pharmacokinetic window).</p>
+                    <p style="margin-top: 10px;"><strong>Dechallenge:</strong> Discontinuation of the suspected drug and observation of ADR resolution. Positive dechallenge (ADR improves) strengthens causality.</p>
+                    <p style="margin-top: 10px;"><strong>Rechallenge:</strong> Re-administration of the drug to reproduce the ADR. Positive rechallenge (ADR reoccurs) strongly supports causality but is rarely done due to ethical concerns.</p>
+                </div>
+            </div>
+
+            <h3>Regulatory & Reporting Aspects</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q6: What are MedDRA and PharmacoVigilance System (PhVS)?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>MedDRA (Medical Dictionary for Regulatory Activities):</strong> Standardized, hierarchical medical terminology used globally for coding adverse events in pharmacovigilance. Uses five levels: System Organ Classes (SOC), High-Level Group Terms (HLGT), High-Level Terms (HLT), Preferred Terms (PT), and Lower-Level Terms (LLT).</p>
+                    <p style="margin-top: 10px;"><strong>PhVS:</strong> System of activities and tools to monitor drug safety post-marketing. Includes adverse event databases, signal detection, periodic safety updates.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q7: What is the NDA/IND and post-marketing surveillance obligations?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>NDA (New Drug Application):</strong> Regulatory submission containing clinical data; if approved, drug enters market.</p>
+                    <p style="margin-top: 10px;"><strong>IND (Investigational New Drug):</strong> Preclinical/clinical development status before NDA.</p>
+                    <p style="margin-top: 10px;"><strong>Post-Marketing Obligations:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Periodic Safety Update Reports (PSUR) every 6 months–annually</li>
+                        <li>Signal detection and risk-benefit reassessment</li>
+                        <li>Risk Minimization Strategies (RMS)</li>
+                        <li>Updates to label/SmPC based on safety data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q8: What is a Safety Update, PERIODIC SAFETY UPDATE REPORT (PSUR), and Development Safety Update Report (DSUR)?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>PSUR:</strong> Comprehensive periodic report submitted post-approval detailing all adverse events, signals, and safety updates. Frequency depends on regulatory requirements.</p>
+                    <p style="margin-top: 10px;"><strong>DSUR:</strong> Submitted during clinical development phases; similar to PSUR but for investigational drugs.</p>
+                    <p style="margin-top: 10px;"><strong>Safety Update:</strong> Ad-hoc communication of urgent safety information (e.g., black box warning, label change).</p>
+                </div>
+            </div>
+
+            <h3>Signal Detection & Risk Management</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q9: Define signal detection. What are the methods and tools used?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>Signal:</strong> Information on a possible causal relationship between an adverse event and a medicinal product that is worthy of further investigation.
+                    <p style="margin-top: 10px;"><strong>Methods:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Spontaneous Reporting Analysis:</strong> Review of adverse event reports (e.g., FAERS, VigiBase)</li>
+                        <li><strong>Disproportionality Analysis:</strong> Statistical comparison (ROR, PRR, IC)</li>
+                        <li><strong>Epidemiological Studies:</strong> Case-control, cohort studies</li>
+                        <li><strong>Data Mining:</strong> Machine learning on large databases</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Tools:</strong> VigiBase, FAERS, EudraVigilance, PharmGKB, SAS, SPSS.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q10: What is risk-benefit assessment? Explain Risk Minimization Strategies (RMS).</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>Risk-Benefit Assessment:</strong> Systematic evaluation of the benefits vs. risks of a drug post-marketing, considering efficacy, safety profile, patient population, and alternatives.
+                    <p style="margin-top: 10px;"><strong>Risk Minimization Strategies:</strong> Proactive measures to reduce ADR occurrence:</p>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Routine RMS:</strong> Labeling updates, dosage adjustment, contraindications</li>
+                        <li><strong>Additional RMS:</strong> Risk Evaluation and Mitigation Strategies (REMS), restricted distribution programs, patient education, monitoring programs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Clinical Scenarios & Problem-Solving</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q11: A patient on metformin develops lactic acidosis. How would you assess causality using Naranjo?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> Using the 10-item Naranjo Scale:
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Are there previous conclusive reports on this reaction? (+1)</li>
+                        <li>Did the adverse event appear after the suspected drug was given? (+2)</li>
+                        <li>Did the adverse reaction improve when the drug was discontinued? (+1)</li>
+                        <li>Did the adverse reaction reappear when the drug was readministered? (+2 if yes)</li>
+                        <li>Are there alternative causes? Consider renal impairment, dehydration (−1 if alternative exists)</li>
+                        <li>Temporal relationship within known pharmacokinetics? (+1)</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Expected Score:</strong> 8–10 (Probable to Definite) given known risk with renal impairment.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q12: What would you do if you identified a potential new safety signal in a drug?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <ol style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Data Collection:</strong> Gather all relevant reports and literature data</li>
+                        <li><strong>Causality Assessment:</strong> Evaluate using Naranjo or WHO-UMC</li>
+                        <li><strong>Frequency Analysis:</strong> Check disproportionality (ROR, PRR, IC values)</li>
+                        <li><strong>Severity & Outcome:</strong> Assess if serious, hospitalization-related, fatal</li>
+                        <li><strong>Escalation:</strong> Notify medical, regulatory, and quality teams</li>
+                        <li><strong>Action Plan:</strong> Consider label update, healthcare professional communication, or RMS</li>
+                        <li><strong>Documentation:</strong> Maintain complete audit trail</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>India-Specific Regulations</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q13: What are India's pharmacovigilance regulations (GVKS, PvPI)?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>GVKS (Grievances Vigilance Knowledge System):</strong> India's national pharmacovigilance portal managed by CDSCO. Healthcare professionals and patients can report ADRs.</p>
+                    <p style="margin-top: 10px;"><strong>PvPI (Pharmacovigilance Programme of India):</strong> Established by CDSCO; hospitals and institutions participate and submit reports.</p>
+                    <p style="margin-top: 10px;"><strong>Key Requirements:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Mandatory reporting of serious ADRs within 14–30 days</li>
+                        <li>Follow ICH-GCP and WHO guidelines</li>
+                        <li>Maintenance of adverse event databases</li>
+                        <li>Coordination with international vigilance programs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q14: What does CDSCO expect from pharmaceutical companies in India regarding pharmacovigilance?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Dedicated PV Department:</strong> With qualified safety pharmacist</li>
+                        <li><strong>Case Tracking System:</strong> Documented receipt, assessment, and follow-up of ADRs</li>
+                        <li><strong>PSUR/DSUR Submission:</strong> As per schedule</li>
+                        <li><strong>Signal Detection:</strong> Proactive monitoring of safety databases</li>
+                        <li><strong>Risk Minimization:</strong> Implement RMS as needed</li>
+                        <li><strong>GVKS Reporting:</strong> Report serious ADRs to national portal</li>
+                        <li><strong>Product Quality:</strong> Ensure no post-market quality issues</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Advanced Topics</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q15: Explain the concept of Risk Evaluation and Mitigation Strategies (REMS) with an example.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>REMS:</strong> A regulatory program ensuring benefits of a drug outweigh its risks. Components:
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Communication Plan:</strong> Healthcare professional and patient education</li>
+                        <li><strong>Elements to Assure Safe Use (ETASU):</strong> Restricted distribution, prescriber/patient enrollment, dispensing restrictions</li>
+                        <li><strong>Implementation System:</strong> Monitoring and evaluation</li>
+                        <li><strong>Timetable for Assessment:</strong> Regular evaluation of effectiveness</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Example:</strong> Thalidomide REMS in the US—restricted to certified prescribers, pharmacies, and patients due to teratogenicity risk.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q16: What is pharmacokinetic-pharmacodynamic (PK-PD) relationship in adverse effects?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>PK-PD Relationship:</strong> Understanding how drug concentration relates to adverse effects helps predict risk and implement preventive measures.</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Relationship to PK:</strong> High plasma levels → increased ADR risk (e.g., digitalis toxicity)</li>
+                        <li><strong>Relationship to PD:</strong> Receptor saturation or enzyme inhibition → prolonged effect or toxicity</li>
+                        <li><strong>Therapeutic Drug Monitoring (TDM):</strong> Maintains levels within therapeutic window to minimize ADRs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q17: How do you differentiate between drug-drug interactions and pharmacovigilance concerns?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <p><strong>Drug-Drug Interactions (DDI):</strong> Physical or chemical interactions between two drugs affecting absorption, distribution, metabolism, or elimination.</p>
+                    <p style="margin-top: 10px;"><strong>Pharmacovigilance Concern:</strong> Unexpected, serious, or novel ADRs attributed to a single drug or combination.</p>
+                    <p style="margin-top: 10px;"><strong>Overlap:</strong> DDI can manifest as an ADR requiring PV investigation. Both require monitoring and appropriate communication.</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q18: What is a "cluster" in pharmacovigilance? How is it detected?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>Cluster:</strong> An unusual increase in the frequency of a specific ADR within a defined time period or geographic area.
+                    <p style="margin-top: 10px;"><strong>Detection:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Spontaneous reporting review (temporal or geographic grouping)</li>
+                        <li>Statistical analysis: Chi-square test, temporal trend analysis</li>
+                        <li>Comparison with historical baseline rates</li>
+                        <li>Investigation of common factors (batch/lot, production, storage conditions)</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Example:</strong> Sudden increase in liver toxicity cases of a drug in a specific region → investigate product quality or counterfeit drugs.</p>
+                </div>
+            </div>
+
+            <h3>Data Management & Tools</h3>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q19: What is VigiBase? How is it used in pharmacovigilance?</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong> <strong>VigiBase:</strong> WHO's global database of individual case safety reports (ICSRs). Contains millions of adverse event reports from >130 countries.
+                    <p style="margin-top: 10px;"><strong>Uses:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Signal detection and validation</li>
+                        <li>Post-marketing surveillance trends</li>
+                        <li>International comparison of safety data</li>
+                        <li>Pharmacovigilance research</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Access:</strong> Through WHO Collaborating Centre; provides reports and statistical outputs (ROR, IC values).</p>
+                </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer(this)">
+                <strong>Q20: Compare FAERS, EudraVigilance, and VigiBase.</strong>
+                <div class="answer-box">
+                    <strong>Answer:</strong>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background: #667eea; color: white;">
+                            <th style="border: 1px solid #ccc; padding: 10px;"><strong>Database</strong></th>
+                            <th style="border: 1px solid #ccc; padding: 10px;"><strong>Region</strong></th>
+                            <th style="border: 1px solid #ccc; padding: 10px;"><strong>Owner</strong></th>
+                            <th style="border: 1px solid #ccc; padding: 10px;"><strong>Purpose</strong></th>
+                        </tr>
+                        <tr style="background: #f9f9f9;">
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>FAERS</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">USA</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">FDA</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Post-marketing surveillance (US drugs)</td>
+                        </tr>
+                        <tr style="background: #fff;">
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>EudraVigilance</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">EU</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">EMA</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Post-marketing surveillance (EU drugs)</td>
+                        </tr>
+                        <tr style="background: #f9f9f9;">
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>VigiBase</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Global</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">WHO</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">International signal detection & research</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FREE COURSES TAB -->
+    <div id="courses" class="tab-content">
+        <div class="section">
+            <h2>📚 Free & Low-Cost Pharmacovigilance Courses</h2>
+
+            <h3>Online Learning Platforms</h3>
+
+            <div class="course-card">
+                <h4>🎓 1. Coursera – ICH Guidelines & Pharmacovigilance</h4>
+                <p><strong>Platform:</strong> <span class="platform">Coursera</span></p>
+                <p><strong>Instructor:</strong> University of Basel & Pharmatrack</p>
+                <p><strong>Duration:</strong> <span class="duration">4–6 weeks (3–5 hours/week)</span></p>
+                <p><strong>Content:</strong> ICH-GCP guidelines, adverse event assessment, causality evaluation, regulatory requirements.</p>
+                <p><strong>Cost:</strong> Free audit; certificate ~$49 (optional)</p>
+                <p><strong>Link:</strong> coursera.org</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🎓 2. WHO Online Learning – Pharmacovigilance Basics</h4>
+                <p><strong>Platform:</strong> <span class="platform">WHO</span></p>
+                <p><strong>Instructor:</strong> World Health Organization</p>
+                <p><strong>Duration:</strong> <span class="duration">Self-paced (8–10 hours)</span></p>
+                <p><strong>Content:</strong> Definition, history, global pharmacovigilance systems, adverse drug reactions, reporting mechanisms.</p>
+                <p><strong>Cost:</strong> Free</p>
+                <p><strong>Link:</strong> who.int/teams/regulation-prequalification/pharmacovigilance</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🎓 3. Udemy – Pharmacovigilance Complete Course</h4>
+                <p><strong>Platform:</strong> <span class="platform">Udemy</span></p>
+                <p><strong>Instructor:</strong> Various PV professionals</p>
+                <p><strong>Duration:</strong> <span class="duration">10–15 hours (on-demand)</span></p>
+                <p><strong>Content:</strong> Complete PV workflow, signal detection, PSUR, REMS, MedDRA coding, regulatory updates.</p>
+                <p><strong>Cost:</strong> ₹499–₹1499 (occasional discounts to ₹299)</p>
+                <p><strong>Link:</strong> udemy.com</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🎓 4. GVKS Training (India-Specific)</h4>
+                <p><strong>Platform:</strong> <span class="platform">CDSCO/PvPI</span></p>
+                <p><strong>Instructor:</strong> Central Drugs Standard Control Organization</p>
+                <p><strong>Duration:</strong> <span class="duration">2–3 days (workshops) or self-paced online</span></p>
+                <p><strong>Content:</strong> Indian pharmacovigilance systems, GVKS portal, adverse event reporting, CDSCO requirements.</p>
+                <p><strong>Cost:</strong> Free/Nominal fee</p>
+                <p><strong>Link:</strong> pharmacovigilance.gov.in/gvks</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🎓 5. OpenStax Textbooks – Pharmacology Foundation</h4>
+                <p><strong>Platform:</strong> <span class="platform">OpenStax</span></p>
+                <p><strong>Instructor:</strong> OpenStax (Rice University)</p>
+                <p><strong>Duration:</strong> <span class="duration">Self-paced</span></p>
+                <p><strong>Content:</strong> Free pharmacology textbooks covering drug interactions, metabolism, toxicology (foundation for PV).</p>
+                <p><strong>Cost:</strong> Free (PDF & online)</p>
+                <p><strong>Link:</strong> openstax.org</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🎓 6. LinkedIn Learning – Pharmacovigilance Essentials</h4>
+                <p><strong>Platform:</strong> <span class="platform">LinkedIn Learning</span></p>
+                <p><strong>Instructor:</strong> PV professionals</p>
+                <p><strong>Duration:</strong> <span class="duration">2–3 hours</span></p>
+                <p><strong>Content:</strong> PV fundamentals, career planning, industry trends.</p>
+                <p><strong>Cost:</strong> Free 1-month trial, then ₹599/month</p>
+                <p><strong>Link:</strong> linkedin.com/learning</p>
+            </div>
+
+            <h3>Certifications & Specialized Training</h3>
+
+            <div class="course-card">
+                <h4>🏆 7. RAPS (Regulatory Affairs Professionals Society) – PharmaGUID</h4>
+                <p><strong>Organization:</strong> <span class="platform">RAPS</span></p>
+                <p><strong>Duration:</strong> <span class="duration">4–6 weeks</span></p>
+                <p><strong>Content:</strong> FDA regulations, pharmacovigilance fundamentals, compliance requirements.</p>
+                <p><strong>Cost:</strong> ₹20,000–₹30,000 (international rates; sometimes discounted for students)</p>
+                <p><strong>Link:</strong> raps.org</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🏆 8. ICH Training – GCP & PV Guidelines</h4>
+                <p><strong>Organization:</strong> <span class="platform">ICH Secretariat</span></p>
+                <p><strong>Duration:</strong> <span class="duration">1–2 weeks (online workshops)</span></p>
+                <p><strong>Content:</strong> Detailed ICH-GCP (E6), pharmacovigilance (E2A, E2C) guidelines, case studies.</p>
+                <p><strong>Cost:</strong> Free/Nominal (check ICH.org for scheduled sessions)</p>
+                <p><strong>Link:</strong> ich.org</p>
+            </div>
+
+            <div class="course-card">
+                <h4>🏆 9. AOAC/BIPEA – MedDRA Coding Workshop</h4>
+                <p><strong>Organization:</strong> <span class="platform">BIPEA or local PV centers</span></p>
+                <p><strong>Duration:</strong> <span class="duration">3–5 days</span></p>
+                <p><strong>Content:</strong> MedDRA dictionary structure, coding adverse events, practical exercises.</p>
+                <p><strong>Cost:</strong> ₹15,000–₹25,000 (India-based workshops)</p>
+                <p><strong>Link:</strong> Check with BIPEA, pharmaceutical associations</p>
+            </div>
+
+            <h3>YouTube & Open Access Resources</h3>
+
+            <div class="course-card">
+                <h4>📹 10. YouTube Channels for Pharmacovigilance</h4>
+                <p><strong>Channels:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Pharmacovigilance TV:</strong> Tutorials on PV concepts, case studies, regulatory updates</li>
+                    <li><strong>Pharmacy Council & Regulatory Bodies:</strong> Official webinars and training</li>
+                    <li><strong>CDSCO Official:</strong> Indian pharmacovigilance updates and guidelines</li>
+                </ul>
+                <p><strong>Cost:</strong> Free</p>
+            </div>
+
+            <h3>Webinars & Workshops</h3>
+
+            <div class="course-card">
+                <h4>🎤 11. Pharmatrack & PV Centers – Regular Webinars</h4>
+                <p><strong>Frequency:</strong> Monthly/Quarterly</p>
+                <p><strong>Content:</strong> Latest regulatory updates, case discussions, practical PV scenarios.</p>
+                <p><strong>Cost:</strong> Free to nominal</p>
+                <p><strong>Link:</strong> Check Pharmatrack.net, pharmaceutical associations</p>
+            </div>
+
+            <h3>Recommended Learning Path (Structured)</h3>
+
+            <div style="background: #e8ecff; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h4 style="color: #667eea; margin-bottom: 15px;">🚀 3-Month Intensive Learning Plan</h4>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="background: #667eea; color: white;">
+                        <th style="border: 1px solid #ccc; padding: 10px;"><strong>Month</strong></th>
+                        <th style="border: 1px solid #ccc; padding: 10px;"><strong>Focus</strong></th>
+                        <th style="border: 1px solid #ccc; padding: 10px;"><strong>Resources</strong></th>
+                    </tr>
+                    <tr style="background: #f9f9f9;">
+                        <td style="border: 1px solid #ccc; padding: 10px;"><strong>Month 1</strong></td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">PV Fundamentals & ICH-GCP</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">WHO online + Coursera + OpenStax</td>
+                    </tr>
+                    <tr style="background: #fff;">
+                        <td style="border: 1px solid #ccc; padding: 10px;"><strong>Month 2</strong></td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Causality & Regulatory Requirements</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Udemy course + GVKS training + Case studies</td>
+                    </tr>
+                    <tr style="background: #f9f9f9;">
+                        <td style="border: 1px solid #ccc; padding: 10px;"><strong>Month 3</strong></td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Signal Detection & Practical PV</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Real-world case discussions + Practice with FAERS/VigiBase data</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENTRY ROADMAP TAB -->
+    <div id="roadmap" class="tab-content">
+        <div class="section">
+            <h2>🗺️ Complete Entry Roadmap: B.Pharm → Pharmacovigilance Career</h2>
+
+            <div class="roadmap" style="margin-left: 40px;">
+
+                <div class="roadmap-item" data-step="1">
+                    <h4>✅ Final Year B.Pharm: Foundation & Planning</h4>
+                    <ul>
+                        <li><strong>Focus on Regulatory Pharmacology & Clinical Pharmacy:</strong> Understand ICH-GCP, FDA regulations, adverse event assessment</li>
+                        <li><strong>Projects:</strong> If possible, choose PV-related projects (e.g., adverse drug reaction analysis, drug safety review)</li>
+                        <li><strong>Internships:</strong> Complete mandatory internships at pharmaceutical companies with PV departments (QA/QC or Regulatory)</li>
+                        <li><strong>Networking:</strong> Connect with PV professionals; attend seminars/webinars on drug safety</li>
+                        <li><strong>Literature Review:</strong> Read recent pharmacovigilance case studies and safety updates</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="2">
+                    <h4>🎓 Parallel: Free Online Courses (Months 3–6 before graduation)</h4>
+                    <ul>
+                        <li><strong>Month 1:</strong> Complete WHO Pharmacovigilance Basics + OpenStax Pharmacology</li>
+                        <li><strong>Month 2:</strong> Coursera ICH-GCP & PV Guidelines course</li>
+                        <li><strong>Month 3:</strong> Udemy Pharmacovigilance Complete Course + YouTube tutorials</li>
+                        <li><strong>Parallel:</strong> Register with GVKS portal; understand Indian PV regulations</li>
+                        <li><strong>Practice:</strong> Analyze sample adverse event reports; practice Naranjo causality scoring</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="3">
+                    <h4>📜 Certifications & Credentials</h4>
+                    <ul>
+                        <li><strong>Priority 1 (Essential):</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>ICH-GCP Certificate (free online completion)</li>
+                                <li>MedDRA Fundamentals (free webinar or low-cost course)</li>
+                                <li>GVKS Training Certificate (free from PvPI)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Priority 2 (Recommended):</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>Udemy Pharmacovigilance Certificate (₹499–₹1499)</li>
+                                <li>Coursera PV Certificate (₹2000–₹3000)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Priority 3 (Advanced, Post-Joining):</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>RAPS Certification (₹20,000+)</li>
+                                <li>Specialized PV Diploma</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="4">
+                    <h4>💼 Build Portfolio & Experience</h4>
+                    <ul>
+                        <li><strong>Documentation:</strong> Prepare case studies on ADR assessment, causality analysis, signal detection examples</li>
+                        <li><strong>Technical Skills:</strong> Learn basic Excel, SAS/SPSS for data analysis; familiarize with FAERS/EudraVigilance databases</li>
+                        <li><strong>Writing:</strong> Practice writing adverse event reports, PSUR summaries, risk minimization plans</li>
+                        <li><strong>Projects:</strong> Develop a mock PV protocol or safety analysis document to demonstrate competence</li>
+                        <li><strong>LinkedIn:</strong> Update profile highlighting PV interest, share relevant articles, connect with PV professionals</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="5">
+                    <h4>🔍 Job Search & Interview Preparation</h4>
+                    <ul>
+                        <li><strong>Target Companies:</strong> Pharma companies (Pfizer, Cipla, Lupin, Sun Pharma), CROs (Covance, Charles River, PAREXEL), Pharmacovigilance service providers</li>
+                        <li><strong>Job Titles:</strong> PV Associate, PV Executive, Safety Associate, Regulatory Affairs Associate</li>
+                        <li><strong>Websites:</strong> LinkedIn, Indeed, Naukri, Glassdoor, company career pages</li>
+                        <li><strong>Interview Prep:</strong> Use this guide's 20 key questions; practice explaining pharmacovigilance concepts clearly</li>
+                        <li><strong>Negotiation:</strong> Typical starting salary: ₹2.5–₹4.5 LPA (India). Research company standards; be clear on expectations</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="6">
+                    <h4>✨ First Job: On-the-Job Learning (Month 1–6)</h4>
+                    <ul>
+                        <li><strong>Day 1–Week 2:</strong> Orientation to company PV processes, regulatory requirements, case management system training</li>
+                        <li><strong>Week 3–Month 1:</strong> Begin handling adverse event reports under supervision (review, assess, code)</li>
+                        <li><strong>Month 2–3:</strong> Lead on smaller projects: signal monitoring, periodic reports, query resolution</li>
+                        <li><strong>Month 4–6:</strong> Independent case handling, participation in signal detection meetings, preparation of safety updates</li>
+                        <li><strong>Ongoing:</strong> Attend internal training, webinars; seek mentorship from senior PV staff</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item" data-step="7">
+                    <h4>🚀 Career Growth (Year 2+)</h4>
+                    <ul>
+                        <li><strong>Skill Development:</strong> Advanced MedDRA coding, VigiBase/FAERS analysis, signal evaluation expertise</li>
+                        <li><strong>Specialization:</strong> Choose focus area (e.g., oncology PV, pediatric safety, drug-device vigilance)</li>
+                        <li><strong>Leadership:</strong> Move toward senior PV analyst, team lead, or PV manager roles</li>
+                        <li><strong>Advanced Certifications:</strong> RAPS, PV specialist diploma, regulatory affairs certification</li>
+                        <li><strong>Industry Involvement:</strong> Join pharmacy associations, present at conferences, publish case studies</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h3 style="margin-top: 40px;">Critical Success Factors</h3>
+
+            <div class="tips-box">
+                <strong>✅ To Stand Out:</strong>
+                <p style="margin-top: 10px;">1. <strong>Regulatory Knowledge:</strong> Deep understanding of ICH-GCP, FDA 21 CFR Part 11, EMA guidelines, CDSCO requirements</p>
+                <p>2. <strong>Practical Skills:</strong> Ability to assess causality, write case narratives, identify signals</p>
+                <p>3. <strong>Attention to Detail:</strong> PV demands precision; missing key information can compromise safety</p>
+                <p>4. <strong>Communication:</strong> Clear writing and ability to explain complex safety data to non-technical stakeholders</p>
+                <p>5. <strong>Continuous Learning:</strong> PV field evolves with new regulations and technologies; stay updated</p>
+                <p>6. <strong>Ethical Mindset:</strong> Understand that your work directly impacts patient safety</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- KEY TOPICS TAB -->
+    <div id="topics" class="tab-content">
+        <div class="section">
+            <h2>📖 Core Pharmacovigilance Topics Explained</h2>
+
+            <h3>1. Pharmacovigilance Fundamentals</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>📌 Definition & Scope</strong>
+                    <p>Science of detecting, assessing, understanding, and preventing adverse drug effects. Post-marketing surveillance.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🎯 Objectives</strong>
+                    <p>Improve drug safety, enhance efficacy-safety ratio, support regulatory decisions, protect public health.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🔄 Workflow</strong>
+                    <p>Report collection → Assessment → Coding (MedDRA) → Database management → Signal detection → Action.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">2. Adverse Drug Reactions</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>🚨 Definition</strong>
+                    <p>Any noxious, unintended response occurring at therapeutic doses. WHO and ICH definitions.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>📊 Classification</strong>
+                    <p>Type A–E (WHO), Severity (Mild, Moderate, Severe), Outcome (Recovered, Recovering, Not recovered, Fatal, Unknown).</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🔬 Reporting</strong>
+                    <p>Spontaneous reports, clinical trials, literature, regulatory databases. Mandatory vs. voluntary.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">3. Causality Assessment Methods</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>📏 Naranjo Scale</strong>
+                    <p>10-question algorithm; most common. Scores: Definite (≥9), Probable (5–8), Possible (1–4), Unlikely (≤0).</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🌍 WHO-UMC Scale</strong>
+                    <p>6 categories: Certain, Probable/Likely, Possible, Unlikely, Unrelated, Unassessable. Narrative-based.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>⚙️ Factors in Assessment</strong>
+                    <p>Temporal relationship, dose-response, dechallenge/rechallenge, alternative causes, previous reports.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">4. Regulatory Framework</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>🏛️ ICH Guidelines</strong>
+                    <p>GCP (E6), Pharmacovigilance (E2A, E2B, E2C, E2D). International harmonization standards.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🇺🇸 FDA & USA</strong>
+                    <p>FAERS database, 21 CFR Part 320, MedWatch, serious AERS reporting within 15 days.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🇮🇳 India (CDSCO)</strong>
+                    <p>GVKS portal, PvPI program, PSUR/DSUR, Schedule Y compliance, 14–30 day reporting windows.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">5. Signal Detection & Data Analysis</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>📡 Signal Definition</strong>
+                    <p>Detected adverse event-drug association warranting further investigation. Based on disproportionality.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🔢 Statistical Methods</strong>
+                    <p>ROR (Reporting Odds Ratio), PRR (Proportional Reporting Ratio), IC (Information Component), Chi-square test.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🗄️ Databases</strong>
+                    <p>FAERS (FDA), EudraVigilance (EMA), VigiBase (WHO), GVKS (India). Public access with restrictions.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">6. Safety Documentation & Reporting</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>📋 Case Report Form (CRF)</strong>
+                    <p>Document for capturing ADR details. Includes demographics, drug info, ADR description, outcomes.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>📄 PSUR (Periodic Safety Update Report)</strong>
+                    <p>Submitted annually/per schedule. Summarizes all safety data, signals, actions, and updates.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🔐 Medical Dictionary (MedDRA)</strong>
+                    <p>Standardized adverse event coding. 5 levels: SOC, HLGT, HLT, PT, LLT. Essential for database harmonization.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">7. Risk Management & REMS</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>⚖️ Risk-Benefit Assessment</strong>
+                    <p>Evaluation of efficacy vs. safety. Considers populations, alternatives, therapeutic need.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🛡️ Risk Minimization</strong>
+                    <p>Routine (labeling) or Additional (REMS, restricted distribution, monitoring). Proportionate to risk.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🚨 REMS Program</strong>
+                    <p>Risk Evaluation Mitigation Strategy (US). Includes education, restricted dispensing, monitoring, enrollment.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">8. Special Populations & Topics</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>👶 Pediatric Safety</strong>
+                    <p>Off-label use, formulation issues, dosing challenges, special PV considerations.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🤰 Pregnancy & Lactation</strong>
+                    <p>Teratogenicity, developmental toxicity, lactation effects. Category A–X drugs (FDA).</p>
+                </div>
+                <div class="topic-card">
+                    <strong>👴 Geriatric Pharmacology</strong>
+                    <p>Age-related PK/PD changes, polypharmacy, higher ADR risk, dosing adjustments.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">9. Emerging Topics</h3>
+            <div class="key-topics">
+                <div class="topic-card">
+                    <strong>🤖 AI & Machine Learning</strong>
+                    <p>Automated signal detection, predictive modeling, pattern recognition in large datasets.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>💊 Real-World Evidence (RWE)</strong>
+                    <p>Safety data from electronic health records (EHRs), registries, observational studies.</p>
+                </div>
+                <div class="topic-card">
+                    <strong>🔗 Blockchain & Traceability</strong>
+                    <p>Counterfeit drug detection, supply chain transparency, distributed PV networks.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ADDITIONAL RESOURCES TAB -->
+    <div id="resources" class="tab-content">
+        <div class="section">
+            <h2>🌐 Additional Resources & Tools</h2>
+
+            <h3>Databases & Portals (Free Access)</h3>
+
+            <div class="cert-box">
+                <strong>1. GVKS (Grievances Vigilance Knowledge System) – India</strong>
+                <p><strong>Link:</strong> pharmacovigilance.gov.in/gvks</p>
+                <p><strong>Access:</strong> Public reporting portal + professional database access</p>
+                <p><strong>Use:</strong> Report and search adverse events in India; understand PvPI protocols</p>
+            </div>
+
+            <div class="cert-box">
+                <strong>2. FAERS (FDA Adverse Event Reporting System) – USA</strong>
+                <p><strong>Link:</strong> fda.gov/drugs/questions-answers/questions-answers-faers-public-dashboard</p>
+                <p><strong>Access:</strong> Free public dashboard with searchable adverse event data</p>
+                <p><strong>Use:</strong> Access US adverse event data; learn signal detection; practice data analysis</p>
+            </div>
+
+            <div class="cert-box">
+                <strong>3. VigiBase – WHO Global Database</strong>
+                <p><strong>Link:</strong> who-umc.org</p>
+                <p><strong>Access:</strong> Restricted (institutions & healthcare professionals); via WHO-UMC collaboration</p>
+                <p><strong>Use:</strong> International signal detection; research; pharmacovigilance studies</p>
+            </div>
+
+            <div class="cert-box">
+                <strong>4. EudraVigilance – European Medicines Agency</strong>
+                <p><strong>Link:</strong> ema.europa.eu/ema/index.jsp</p>
+                <p><strong>Access:</strong> Public access to summary data; professional access for detailed cases</p>
+                <p><strong>Use:</strong> EU drug safety data; regulatory monitoring</p>
+            </div>
+
+            <div class="cert-box">
+                <strong>5. PubMed & Google Scholar – Literature</strong>
+                <p><strong>Link:</strong> pubmed.ncbi.nlm.nih.gov, scholar.google.com</p>
+                <p><strong>Access:</strong> Free access to abstracts; full articles via institutional access</p>
+                <p><strong>Use:</strong> Search pharmacovigilance case reports, safety reviews, clinical studies</p>
+            </div>
+
+            <h3 style="margin-top: 30px;">Essential Guidelines & Documents</h3>
+
+            <div class="cert-box">
+                <strong>📄 ICH Guidelines (Free Download)</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>E6(R2):</strong> Good Clinical Practice – Download from ich.org</li>
+                    <li><strong>E2A–E2D:</strong> Pharmacovigilance planning and periodic reporting</li>
+                    <li><strong>M4S:</strong> CTD Common Technical Document safety sections</li>
+                </ul>
+            </div>
+
+            <div class="cert-box">
+                <strong>📄 FDA Guidance Documents</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>FDA Adverse Event Reporting Requirements:</strong> 21 CFR Part 314, 600</li>
+                    <li><strong>MedWatch Program:</strong> Guidelines for serious adverse event reporting</li>
+                    <li><strong>REMS Guidance:</strong> Risk Evaluation and Mitigation Strategies (2011 update)</li>
+                </ul>
+                <p><strong>Link:</strong> fda.gov/regulatory-information/guidance-documents</p>
+            </div>
+
+            <div class="cert-box">
+                <strong>📄 CDSCO/PvPI Resources (India)</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Schedule Y (CTD format):</strong> Requirements for drug licensing</li>
+                    <li><strong>Indian Pharmacopoeia:</strong> Standards for drug testing</li>
+                    <li><strong>GVKS Standard Formats:</strong> ADR report templates</li>
+                </ul>
+                <p><strong>Link:</strong> cdsco.gov.in, pharmacovigilance.gov.in</p>
+            </div>
+
+            <h3 style="margin-top: 30px;">Software & Tools for PV Professionals</h3>
+
+            <div class="cert-box">
+                <strong>🖥️ Free/Open-Source Tools</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>R (R-stats):</strong> Statistical analysis for signal detection (ROR, IC calculations)</li>
+                    <li><strong>Python:</strong> Data analysis, automation, database scripting</li>
+                    <li><strong>SQL Server Express:</strong> Free database management (for case tracking systems)</li>
+                    <li><strong>SPSS (Student Version):</strong> Statistical analysis; discounted for academics</li>
+                </ul>
+            </div>
+
+            <div class="cert-box">
+                <strong>💻 PV-Specific Software (Commercial)</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Ennov Clinical:</strong> Case management, PSUR generation</li>
+                    <li><strong>Veeva Vault:</strong> Pharmacovigilance platform</li>
+                    <li><strong>MasterControl:</strong> Document management & compliance tracking</li>
+                    <li><strong>Medidata Acorn:</strong> Clinical trial safety management</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 30px;">Professional Organizations & Networks</h3>
+
+            <div class="cert-box">
+                <strong>🤝 Global & Regional Bodies</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>WHO Uppsala Monitoring Centre:</strong> Global PV coordination (who-umc.org)</li>
+                    <li><strong>RAPS (Regulatory Affairs Professionals Society):</strong> Certification & training (raps.org)</li>
+                    <li><strong>AOAC International:</strong> Standards and training (aoac.org)</li>
+                    <li><strong>BIPEA (Indian Organization):</strong> Pharmacovigilance training & certification</li>
+                    <li><strong>PharmaTrack:</strong> PV education and networking platform</li>
+                </ul>
+            </div>
+
+            <div class="cert-box">
+                <strong>🇮🇳 India-Specific</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Indian Pharmaceutical Association (IPA):</strong> ipa.org.in</li>
+                    <li><strong>Pharmacy Council of India (PCI):</strong> pci.nic.in</li>
+                    <li><strong>CDSCO (Central Drugs Standard Control Organization):</strong> cdsco.gov.in</li>
+                    <li><strong>PvPI (Pharmacovigilance Programme of India):</strong> pharmacovigilance.gov.in</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 30px;">Interview Preparation Checklist</h3>
+
+            <div class="checklist">
+                <h4 style="color: #667eea; margin-bottom: 15px;">Pre-Interview Preparation</h4>
+                <label>
+                    <input type="checkbox"> Review the 20 interview questions in this guide (Q1–Q20)
+                </label>
+                <label>
+                    <input type="checkbox"> Study one case study of adverse event assessment using Naranjo/WHO-UMC
+                </label>
+                <label>
+                    <input type="checkbox"> Understand the company's products and any known safety issues
+                </label>
+                <label>
+                    <input type="checkbox"> Know India's GVKS system and CDSCO requirements
+                </label>
+                <label>
+                    <input type="checkbox"> Practice explaining causality assessment concepts clearly
+                </label>
+                <label>
+                    <input type="checkbox"> Prepare 3–4 examples of how you'd handle a hypothetical ADR report
+                </label>
+                <label>
+                    <input type="checkbox"> Memorize key definitions (ADR, signal, PSUR, causality, REMS)
+                </label>
+                <label>
+                    <input type="checkbox"> Research company's PV department structure and recent PV announcements
+                </label>
+                <label>
+                    <input type="checkbox"> Prepare questions to ask the interviewer about the role & team
+                </label>
+                <label>
+                    <input type="checkbox"> Polish resume with relevant coursework, projects, and certifications
+                </label>
+            </div>
+
+            <h3 style="margin-top: 30px;">Sample Interview Questions to Practice</h3>
+
+            <div class="tips-box">
+                <strong>🎯 Practice Scenarios:</strong>
+                <p style="margin-top: 10px;"><strong>Scenario 1:</strong> "A patient on warfarin presents with bleeding. What's your approach to assess causality?"</p>
+                <p style="margin-top: 10px;"><strong>Scenario 2:</strong> "You detect 15 reports of hepatotoxicity for Drug X in a single month. What do you do?"</p>
+                <p style="margin-top: 10px;"><strong>Scenario 3:</strong> "A serious ADR report comes in with insufficient data. How do you handle the follow-up?"</p>
+                <p style="margin-top: 10px;"><strong>Scenario 4:</strong> "Explain the differences between Type A and Type B adverse reactions with examples."</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>📚 <strong>Pharmacovigilance Career Guide</strong> | Created for B.Pharm Graduates | Last Updated: 2026</p>
+    <p>Remember: Patient safety is at the heart of pharmacovigilance. Your role is crucial! 🔬</p>
+</footer>
+
+<script>
+    function switchTab(tabName) {
+        // Hide all tab contents
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Remove active class from all tabs
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        // Show selected tab
+        document.getElementById(tabName).classList.add('active');
+
+        // Highlight active button
+        event.target.classList.add('active');
+    }
+
+    function toggleAnswer(element) {
+        const answerBox = element.querySelector('.answer-box');
+        answerBox.classList.toggle('show');
+        element.classList.toggle('active');
+    }
+</script>
+```
+
+</body>
+</html>
